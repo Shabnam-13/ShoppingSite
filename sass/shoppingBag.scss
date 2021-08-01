@@ -1,0 +1,165 @@
+#shoppingBagPage{
+    @extend %btnExtend;
+
+    #shoppingBagArea{
+        padding: 6rem 0;
+        .single-product{
+            .product-info{
+                border-bottom: $singleBorder;
+                table{
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    display: inline-table;
+                    td{
+                        vertical-align: middle;
+                    }
+                    th{
+                        text-transform: capitalize;
+                    }
+                    tbody{
+                        .img{
+                            width: 100px;
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+                        td:nth-child(2){
+                            a{
+                                text-decoration: none;
+                                color: $mainTextcolor;
+                                text-transform: capitalize;
+                                transition: all 0.3s ease-in-out;
+                                &:hover{
+                                    color:$mainHoverColor ;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+                        }
+                        td{
+                            h6{
+                                font-weight: 600;
+                            }
+                        }
+                        .quantity{
+                            align-self: center;
+                            margin-right: 1.5rem;
+                            input{
+                                width: 50px;
+                                border: #ddd 1px solid;
+                                border-radius: 5px;
+                                padding: 5px;
+                                text-align: center;
+                            }
+                        }
+                        td:last-child{
+                            a{
+                                display: inline-block;
+                                color: $mainTextcolor;
+                                width: 40px;
+                                height: 40px;
+                                line-height: 37px;
+                                text-align: center;
+                                font-size: 25px;
+                                border-radius: 50%;
+                                transition: all 0.3s ease-in-out;
+                                text-decoration: none;
+                                &:hover{
+                                    background-color: $mainHoverColor;
+                                    transition: all 0.3s ease-in-out;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .actions{
+                margin-top:1rem;
+                .update{
+                    display: flex;
+                    justify-content: flex-end;
+                    a{
+                        width: unset;
+                        padding: 12px 15px;
+                        text-decoration: none;
+                        display: inline-block;                    
+                    }
+                }
+            }
+        }
+        .line{
+            position: relative;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            padding: 2.5rem 0;
+            &::after{
+                position: absolute;
+                content: "";
+                background-color: #d6d6d6;
+                width: 45%;
+                height: 2px;
+                top: 50%;
+                right: 0;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background-color: #d6d6d6;
+                width: 45%;
+                height: 2px;
+                top: 50%;
+                left: 0;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+            }
+        }
+        .totals{
+            border: $singleBorder;
+            padding: 1rem;
+            .title{
+                margin-bottom: 15px;
+                h5{
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                    font-size:16px ;
+                }
+            }
+            table{
+                width: 100%;
+                tbody{
+                    border-top:$singleBorder;
+                }
+                th{
+                    text-transform: capitalize;
+                    font-weight: 400;
+                }
+                th,td{
+                    padding: 10px 0;
+                }
+
+            }
+            .checkout{
+                margin-top: 1rem;
+                a{
+                    width: unset;
+                    padding: 12px 35px;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+            }
+        }
+
+        @media only screen and (max-width:992px){
+            .single-product{
+                table{
+                    display: block !important;
+                }
+            }
+        }
+    }

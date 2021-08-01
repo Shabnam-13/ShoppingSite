@@ -1,0 +1,500 @@
+#myNav {
+    @extend %btnExtend;
+
+    font-family: $textFont;
+    transition: all 0.5s ease 0s;
+    top             : 0;
+    right           : 0;
+    left            : 0;
+    z-index         : 999;
+    background-color: white;
+    .navbar {        
+        justify-content: space-between;
+        padding: 0;
+        .navbar-toggler {
+            border-color: white;
+        }
+        .collapse {
+            justify-content: flex-end;
+        }
+        .navbar-nav {
+            .nav-item {
+                padding-right: 28px;
+                &:hover {
+                    .nav-link{
+                        color     : $mainHoverColor;
+                        transition: $mainTransition;
+                    }
+                }
+                .nav-link {
+                    color         : $mainTextcolor;
+                    text-transform: uppercase;
+                    font-size     : $text;
+                    font-weight   : 500;
+                    padding       : 24px 0;
+                    transition: $mainTransition;                      
+                    &::after {
+                        content: none;
+                    }
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .myActive {
+                .nav-link {
+                    color: $mainHoverColor;
+                }
+            }
+            .dropdown-cart{
+                .nav-link{
+                    position: relative;
+                    span{
+                        position: absolute;
+                        text-align: center;
+                        background-color: $mainHoverColor;
+                        border-radius: 50%;
+                        font-size: 11px;
+                        width: 14px;
+                        line-height: 8px;
+                        padding: 4px;
+                        color: white;
+                        bottom: 50%;
+                    }
+                }
+                .dropdown-menu{
+                    width: 320px;
+                    margin: 0;
+                    right: 0;
+                    left: unset;
+                    padding: 0;
+                    box-shadow: $littleShadow;
+                    border: unset;
+                    border-radius: 0;
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        li{
+                            padding: 10px;
+                            position: relative;
+                            text-transform: capitalize;
+                            .remove-item{
+                                text-decoration: none;
+                                color: $mainTextcolor;
+                                position: absolute;
+                                right: 5%;
+                                z-index: 1;
+                            }
+                            .cart-content{
+                                margin-right: 16px;
+                                img{
+                                    width: 95px;
+                                    height: 90px;
+                                    border-radius: 0;
+                                }
+                                .cart-body{
+                                    padding-left: 5px;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    a{
+                                        text-decoration: none;
+                                        color: $mainTextcolor;
+                                        font-size: $text;
+                                        margin-bottom: 5px;
+                                        &:hover{
+                                            color: $mainHoverColor;
+                                        }
+                                    }
+                                    p{
+                                        margin: 10px 0 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .subtotal{
+                        padding: 10px;
+                        .total-price{
+                            font-weight: 600;
+                            font-size: $text;
+                            margin-bottom:10px ;
+                            p{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                        .btns{
+                            display: flex;
+                            justify-content: space-evenly;
+                            .btn-black{
+                                border: $mainTextcolor solid 1px;
+                                border-radius: 5px;
+                                overflow: hidden;
+                                color: white;
+                                width: 125px;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    width: 50%;
+                                    height: 100%;
+                                    right:0;
+                                    top: 0;
+                                    bottom: 0;
+                                    z-index: -1;
+                                    background-color: $mainTextcolor;
+                                    transition: $mainTransition;                                        
+                                }
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    width: 50%;
+                                    height: 100%;
+                                    left: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    z-index: -1;
+                                    background-color: $mainTextcolor;
+                                    transition: $mainTransition;                                        
+                                }
+                                &:hover{
+                                    color:$mainTextcolor;
+                                    transition: all 0.5s ease 0s;
+                                    &::after{
+                                        width: 0;
+                                        transition: all 0.5s ease 0s;
+                                    }
+                                    &::before{
+                                        width: 0;
+                                        transition: all 0.5s ease 0s;
+                                    }
+                                }
+                            }
+                            .btn-pink{
+                                border: $mainHoverColor solid 1px;
+                                border-radius: 5px;
+                                overflow: hidden;
+                                color: white;
+                                width: 125px;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    width: 50%;
+                                    height: 100%;
+                                    right:0;
+                                    top: 0;
+                                    bottom: 0;
+                                    z-index: -1;
+                                    background-color: $mainHoverColor;
+                                    transition: $mainTransition;                                        
+                                }
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    width: 50%;
+                                    height: 100%;
+                                    left: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    z-index: -1;
+                                    background-color: $mainHoverColor;
+                                    transition: $mainTransition;                                        
+                                }
+                                &:hover{
+                                    color:$mainHoverColor;
+                                    transition: all 0.5s ease 0s;
+                                    &::after{
+                                        width: 0;
+                                        transition: all 0.5s ease 0s;
+                                    }
+                                    &::before{
+                                        width: 0;
+                                        transition: all 0.5s ease 0s;
+                                    }
+                                }
+                                
+                            }
+                        }
+
+                    }
+                }
+            }
+            .dropdown-account{
+                .dropdown-menu{
+                    padding: 0;
+                    margin: 0;
+                    left: unset;
+                    right: 0;
+                    box-shadow: $littleShadow;
+                    border: none;
+                    border-radius: 0;
+                    color: $mainTextcolor;
+                    width: max-content;
+                    .account-title{
+                        padding:15px 15px 0px;
+                    }
+                    ul{
+                        padding: 15px;
+                        list-style: none;
+                        li{
+                            padding-bottom: 15px;
+                            a{
+                                text-decoration: none;
+                                color: $mainTextcolor;
+                                font-size: 16px;
+                                font-weight: 500;
+                                text-transform: capitalize;
+                                &:hover{
+                                    color:$mainHoverColor
+                                }
+                                i{
+                                    font-size: 20px;
+                                    color: #787b7be6;
+                                    padding-right: 45px;
+                                    max-width: 30px;
+                                }
+                            }
+                        }
+                    }
+                    .sign-in-btn{
+                        padding: 0 15px 15px;
+                    }
+                }
+            }
+            .dropdown-product{
+                position: unset;
+                .dropdown-menu{
+                    padding: 0;
+                    margin: 0;
+                    left: unset;
+                    width: 100%;
+                    right: 0;
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: $littleShadow;
+                    ul{
+                        padding: 15px;
+                        list-style: none;
+                        text-transform: capitalize;
+                        .category-item{
+                            margin-bottom: 20px;
+                            margin-right: 10px;
+                            display: inline-block;
+                            .category-title{
+                                font-weight: 600;
+                                display: inline-block;
+                                margin-bottom: 5px;
+                                text-decoration: none;
+                                color:$mainTextcolor;
+                                &:hover{
+                                    color: $mainHoverColor;
+                                }
+                            }
+                            .subcategory{
+                                padding:0;
+                                .subcategory-item{
+                                    margin-bottom: 3px;
+                                    a{
+                                        text-decoration: none;
+                                        color:#615c65;
+                                        font-size: $text;
+                                        font-weight: 400;
+                                        &:hover{
+                                            color: $mainHoverColor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sale-banner{
+                        width: 33%;
+                        padding-left:0;
+                        float: right;
+                        .single-banner{
+                            padding-bottom: 10px;
+                            display: inline-block;
+                            .sale-img{
+                                position: relative;  
+                                img{
+                                    max-width: 100%;
+                                } 
+                                .sale-info{
+                                    position: absolute;
+                                    top: 25%;
+                                    right: 5%;
+                                    color: #333333;
+                                    p:first-child{
+                                        font-weight: 500;
+                                        margin-bottom: 5px;
+                                    }
+                                    p:nth-child(2){
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                        margin-bottom: 5px;
+                                    }
+                                    a{
+                                        text-decoration: none;
+                                        font-weight: 400;
+                                        color: #333333;
+                                        position: relative;
+                                        &::before{
+                                            content: "";
+                                            position: absolute;
+                                            background-color: #333333;
+                                            width: 50%;
+                                            height: 5%;
+                                            bottom: 0;
+                                            transition: $mainTransition;                                        
+                                        }
+                                        &:hover{
+                                            color: $mainHoverColor;
+                                            transition: $mainTransition;
+                                            &::before{
+                                            width: 100%;
+                                            transition: $mainTransition;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .category{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .shop-nav{
+            order: 2;
+        }
+        .screen-md{
+            display: none;
+        }
+    }
+}
+#popup-search{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333333e6;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    .search-wrapper{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .search-form{
+            width: 50%;
+            border-bottom: #fff 2px solid;
+            text-align: left;
+            input{
+                background-color: unset;
+                border: none;
+                width: 95%;
+                padding: 10px 0;
+            }
+            .search-icon{
+                position: absolute;
+                bottom: 20%;
+                right: 25%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+        .close-icon{
+            position: absolute;
+            top: -200%;
+            right: 25%;
+            i{
+                cursor: pointer;
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//Responsivness
+
+@media only screen and (max-width:991px){
+    #myNav{
+        .screen-md{
+            display: block !important;
+        }
+        .screen-lg{
+            display: none;
+        }
+        .collapse{
+            //overflow-y: scroll;
+        }
+        .navbar{
+            .navbar-toggler{
+                order: 1;
+            }
+            .navbar-collapse{
+                position: absolute;
+                top: 100%;
+                right: 0%;
+                background-color: white;
+                width: 100%;
+                padding: 10px;
+                box-shadow:$littleShadow;
+                z-index: 999;
+                .navbar-nav{
+                    .nav-item{
+                        padding: 0;
+                        margin-bottom: 15px;
+                        .nav-link{
+                            padding: 0;
+                        }
+                    }
+                    .dropdown-product{
+                        .sale-banner{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .shop-nav{
+                flex-direction: row;
+                order: 0;
+                li{
+                    padding-right: 10px;
+                    .dropdown-menu{
+                        position: absolute;
+                    }
+                }
+            }
+            .dropdown-account{
+                .dropdown-menu{
+                    width: unset !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:380px){
+    #myNav{
+        .navbar{
+            .navbar-brand{
+                img{
+                    max-width: 140px;
+                }
+            }
+        }
+    }
+}

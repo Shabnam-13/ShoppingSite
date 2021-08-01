@@ -1,0 +1,198 @@
+#profilePage{
+    @extend %btnExtend;
+
+    font-family: $textFont;
+    color: $mainTextcolor;
+    #account{
+        padding: 5rem 0;
+        .user-info{
+            display: flex;
+            justify-content: space-between;
+            .title{
+                h1{
+                    font-weight: 600;
+                    margin-bottom: 0px;
+                    text-transform: capitalize;
+                }
+                .edit-btn{
+                    a{
+                        color: $mainTextcolor;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .user-img{
+                border: #ddd 1px solid;
+                width: 120px;
+                height: 120px;
+                line-height: 115px;
+                text-align: center;
+                img{
+                    width: 100px;
+                }
+            }
+        }
+        .upgarde-family{
+            margin-bottom: 2rem;
+            h6{
+                text-transform: capitalize;
+                color: $mainHoverColor;
+                margin-bottom: 0px;
+            }
+            p{
+                width: 50%;
+            }
+        }
+        .profile-history{
+            border: $singleBorder;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            .content{
+                a{
+                    text-transform: capitalize;
+                    color: $mainTextcolor;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: 12px;
+                }
+            }
+            .icon{
+                font-size: 30px;
+                display: flex;
+                align-self: center;
+            }
+        }
+        .profile-edit{
+            padding: 5px 0;
+            border-bottom: $singleBorder;
+            border-width: 2px;
+            margin-bottom: 2rem;
+            transition: $mainTransition;
+            cursor: pointer;
+            h6{
+                text-transform: capitalize;
+            }
+            &:hover{
+                border-bottom-color:darken($color: #ddd, $amount: 20);
+                transition: $mainTransition;
+            }
+        }
+        .active{
+            border-color: $mainHoverColor;
+            &:hover{
+                border-bottom-color:$mainHoverColor;
+            }
+        }
+        .edit-area{
+            .edit-account,.edit-address,.edit-settings{
+                display: none;
+                div:last-child{
+                    border: none;
+                }
+            }
+            .myActive{
+                display: block;
+            }
+            .personal-info{
+                padding: 25px 0;
+                border-bottom: $singleBorder;
+                .title{
+                    display: flex;
+                    justify-content: space-between;
+                    .edit-btn{
+                        a{
+                            color: $mainTextcolor;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .info-area{
+                    .small-info{
+                        p{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 0;
+                        }
+                        a{
+                            color: $mainTextcolor;
+                        }
+                    }
+                    .edit-form{
+                        display: none;
+                        margin-top: 16px;
+                        form{
+                            .form-group{
+                                margin-bottom: 2rem;
+                                width: 50%;
+                                input{
+                                    border: unset;
+                                    border-bottom: $mainTextcolor 1px solid;
+                                    width: 100%;
+                                    padding: 10px 0;
+                                    &::placeholder{
+                                        color: $mainTextcolor;
+                                    }
+                                }
+                            }
+                            .btns{
+                                width: 50%;
+                                display: flex;
+                                justify-content: space-between;
+                                button{
+                                    background-color: unset;
+                                    width: 48%;
+                                    padding: 10px;
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width:992px){
+            .upgarde-family{
+                p{
+                    width:100%;
+                }
+            }
+            .profile-history{
+                margin-bottom: 1rem;
+                height: 125px;
+            }
+            .profile-edit{
+                margin-top:1rem;
+            }
+        }
+
+        @media only screen and (max-width:768px){
+            .profile-history{
+                height: unset !important;
+            }
+            .edit-area{
+                .personal-info{
+                    .info-area{
+                        .edit-form{
+                            form{
+                                .form-group{
+                                    width: 100%;
+                                }
+                                .btns{
+                                    display: block;
+                                    width: 100%;
+                                    button{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

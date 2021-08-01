@@ -1,0 +1,74 @@
+#contactPage{
+    @extend %btnExtend;
+
+    font-family: $textFont;
+
+    #contactUs{
+        padding: 5rem 0;
+        .message-form{
+            .title{
+                margin-bottom: 2rem;
+                h2{
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            form{
+                input{
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: $singleBorder;
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    &::placeholder{
+                        text-transform: capitalize;
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    height: 120px;
+                    border-radius: 5px;
+                    border: $singleBorder;
+                    padding: 10px;
+                    margin-bottom: 1rem;
+                    &::placeholder{
+                        text-transform: capitalize;
+                    }
+                }
+                button{
+                    background-color: $mainHoverColor;
+                    border: $mainHoverColor 1px solid;
+                    text-transform: capitalize;
+                    padding: 10px 20px;
+                    font-weight: 600;
+                    transition: $mainTransition;
+                    &:hover{
+                        color:$mainHoverColor;
+                        background-color: white;
+                        transition: $mainTransition;
+                    }
+                }
+            }
+        }
+        .googleMap{
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width:992px){
+        .container{
+            max-width: 1140px;
+        }
+    }
+
+    @media only screen and (max-width:768px){
+        #contactUs{
+            .message-form{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

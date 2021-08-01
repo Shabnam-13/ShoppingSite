@@ -1,0 +1,50 @@
+#faqPage{
+    @extend %btnExtend;
+
+    font-family: $textFont;
+    color: $mainTextcolor;
+
+    #faqArea{
+        padding: 5rem 0;
+        .title{
+            margin-bottom: 1.5rem;
+            h4{
+                font-weight: 600;
+            }
+        }
+        .question{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: $singleBorder;
+            cursor: pointer;
+            font-size: $text;
+            text-transform: capitalize;
+            h6{
+                margin-bottom: 0;
+            }
+            i{
+                font-weight: 400;
+            }
+        }
+        .question-area{
+            .question{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: #ddd 1px solid;
+                padding: 10px 0;
+                h6{
+                    margin-bottom: 0;
+                    font-weight: 600;
+                }
+            }
+            .reply{
+                padding: 15px 0;
+                display: none;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

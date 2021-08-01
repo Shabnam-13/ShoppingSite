@@ -1,0 +1,111 @@
+#checkoutPage{
+    @extend %btnExtend;
+
+    #checkout{
+        padding: 5rem 0;
+        .line{
+            position: relative;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            padding: 2.5rem 0;
+            &::after{
+                position: absolute;
+                content: "";
+                background-color: #d6d6d6;
+                width: 45%;
+                height: 2px;
+                top: 50%;
+                right: 0;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background-color: #d6d6d6;
+                width: 45%;
+                height: 2px;
+                top: 50%;
+                left: 0;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+            }
+        .title{
+            margin-bottom: 1.5rem;
+            h4{
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+        .formArea{
+            form{
+                label{
+                    color: $mainTextcolor;
+                }
+                input{
+                    padding: 7px;
+                    border: #ddd 1px solid;
+                    border-radius: 5px;
+                    width: 100%;
+                }
+                input[type=checkbox]{
+                    width: unset;
+                }
+                button{
+                    width: unset;
+                    background-color: unset;
+                    padding: 12px 15px;
+                }
+                .form-group{
+                    a{
+                        color: $mainTextcolor;
+                        transition: all 0.3s ease-in;
+                        text-decoration: none;
+                        &:hover{
+                            color: $mainHoverColor;
+                            transition: all 0.3s ease-in;
+                        }
+                    }
+                }
+            }
+        }
+        .yourOrder{
+            background-color: #f7f8fb;
+            padding: 2rem;
+            .orderDetails{
+                table{
+                    width: 100%;
+                    tr:first-child,tr:last-child{
+                        border-bottom: #ddd 1px solid;
+                        border-top: #ddd 1px solid;
+                        th{
+                            padding: 10px 0;
+                        }
+                    }
+                    td{
+                        padding: 10px 0;
+                        span{
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+            .policy{
+                margin-top: 2rem;
+                p{
+                    a{
+                        color: $mainTextcolor;
+                        transition: all 0.3s ease-in;
+                        text-decoration: none;
+                        &:hover{
+                            color:$mainHoverColor;
+                            transition: all 0.3s ease-in;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import"variables";
+@import"extends";
+@import"navbar";
+@import"intro";
+@import"footer";
+@import"subscribe";
+@import"home";
+@import"about";
+@import"contact";
+@import"login";
+@import"blog";
+@import"profile";
+@import"productDetails";
+@import"termsAndConditions";
+@import"faq";
+@import"error404";
+@import"checkout";
+@import"shoppingBag";
+@import"shop";
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $titleFont;
+}
+p{
+    font-size: $text;
+    color: $secondTextColor;
+    line-height: 26px;
+}
+.acttive-wishlist{
+    color: $mainHoverColor;
+}

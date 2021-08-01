@@ -1,0 +1,72 @@
+#intro{
+    background-color:#F7F8FB;
+    padding: 70px 0;
+    .page-title{
+        h1{
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin: 0;
+        }
+    }
+    .breadcrumb-area{
+        nav{
+            .breadcrumb{
+                padding: 0;
+                margin: 0;
+                background-color: unset;
+                border-radius: unset;
+                color:$mainTextcolor;    
+                justify-content: flex-end;
+                font-size: $text;
+                .breadcrumb-item{
+                    text-transform: capitalize;
+                    &::before{
+                        content: none;
+                    }
+                    &::after{
+                        content: ">";
+                        padding-left: 0.5rem;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:$mainTextcolor;
+                        transition: $mainTransition;
+                        &:hover{
+                            color: $mainHoverColor;
+                            transition: $mainTransition;
+                        }
+                    }                   
+                }
+                .breadcrumb-item:last-child{
+                    &::after{
+                        content: none;
+                    }
+                    a{
+                        color: #6c757d;
+                        &:hover{
+                            color: unset;
+                            cursor: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:768px){
+        .page-title{
+            margin-bottom: 1rem;
+        }
+        .breadcrumb-area{
+            text-align: left;
+            display: inline-block;
+        }
+    }
+    @media only screen and (max-width:768px){
+        .page-title{
+           h1{
+               font-size: 24px;
+           }
+        }
+    }
+}

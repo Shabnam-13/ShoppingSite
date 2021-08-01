@@ -1,0 +1,54 @@
+#loginPage{
+    @extend %btnExtend;
+
+    font-family: $textFont;
+    color: $mainTextcolor;
+
+    #formArea{
+        padding: 5rem 0;
+        .title{
+            margin-bottom: 1.8rem;
+            h3{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+        form{
+            label{
+                width: 100%;
+                font-size: 14px;
+                color:$secondTextColor;
+            }
+            input{
+                width: 100%;
+                padding: 14px;
+                border: #ced4da 1px solid;
+                border-radius: 5px;
+            }
+            button{
+                background-color: unset;
+                padding: 10px 12px;
+                margin-top: 1rem;
+            }
+            a{
+                color: $mainTextcolor;
+                text-decoration: none;
+                &:hover{
+                    color:$mainHoverColor;
+                }
+            }
+        }
+        .login-form{
+            a{
+                display: block;
+                margin-top: 1.5rem;
+            }
+        }
+        .register-form{
+            p{
+                margin-top: 1.5rem;
+                margin: 0;
+            }
+        }
+    }
+}

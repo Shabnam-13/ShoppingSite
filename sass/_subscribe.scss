@@ -1,0 +1,41 @@
+#subscribe{
+    padding:3.5rem 0;
+    background-color: $mainHoverColor;
+    .title{
+        h3{
+            color: white;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 0;
+        }
+    }
+    .subscribe-form{
+        position: relative;
+        input{
+            width: 100%;
+            padding: 10px;
+            border: #ced4da 1px solid;
+            &::placeholder{
+                text-transform: capitalize;                   
+            }
+        }
+        button{
+            position: absolute;
+            color: white;
+            text-transform: capitalize;
+            background-color: $mainTextcolor;
+            padding: 10px 25px;
+            bottom: 0;
+            top: 0;
+            right: 0%;
+            border: none;
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    #subscribe{
+        .title{
+            margin-bottom: 24px;
+        }
+    }
+}

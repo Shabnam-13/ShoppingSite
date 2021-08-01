@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="blogPage">
+    <header>
+      <div id="myNav">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                      <nav class="navbar navbar-expand-lg navbar-light">
+                          <a class="navbar-brand" href="home.html"><img src="img/logo_dark-3.webp" alt=""></a>
+                          <div class="d-flex">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                  aria-expanded="false" aria-label="Toggle navigation">
+                                  <i class="fas fa-bars"></i>
+                              </button>
+                              <ul class="navbar-nav shop-nav">
+                                  <li class="nav-item search">
+                                      <a class="nav-link" href="#"><i class="fa fa-search"
+                                              aria-hidden="true"></i></a>
+                                  </li>
+                                  <li class="nav-item dropdown dropdown-account screen-lg">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                          role="button" data-toggle="dropdown" aria-haspopup="true"
+                                          aria-expanded="false">
+                                          <i class="far fa-user"></i>
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <div class="account-title">
+                                              <h6>Welcome</h6>
+                                          </div>
+                                          <div class="dropdown-divider"></div>
+                                          <ul>
+                                              <li>
+                                                  <a href="myProfile.html">
+                                                      <i class="fas fa-user-circle"></i>
+                                                      <span>My account</span>
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">
+                                                      <i class="fas fa-box-open"></i>
+                                                      <span>My orders</span>
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">
+                                                      <i class="fas fa-history"></i>
+                                                      <span>Recently viewed</span>
+                                                  </a>
+                                              </li>
+                                              <li>
+                                                  <a href="#">
+                                                      <i class="fas fa-info-circle"></i>
+                                                      <span>help & contact</span>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                          <div class="sign-in-btn">
+                                              <a class="btn btn-black" href="login.html">Login</a>
+                                              <span>or</span>
+                                              <a class="btn btn-pink" href="login.html">Register</a>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item screen-lg">
+                                      <a class="nav-link" href="#">
+                                          <i class="far fa-heart"></i>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item dropdown dropdown-cart">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                          role="button" data-toggle="dropdown" aria-haspopup="true"
+                                          aria-expanded="false">
+                                          <i class="fas fa-shopping-cart"></i>
+                                          <span>1</span>
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <ul>
+                                              <li>
+                                                  <a class="remove-item" href="#"><i class="fas fa-times"></i></a>
+                                                  <div class="cart-content">
+                                                      <div class="row no-gutters">
+                                                          <div class="col-md-4">
+                                                              <a href="produstDetails.html">
+                                                                  <img src="img/furniture_img3-450x450.webp"
+                                                                      class="card-img">
+                                                              </a>
+                                                          </div>
+                                                          <div class="col-md-8">
+                                                              <div class="cart-body">
+                                                                  <a href="produstDetails.html">
+                                                                      Internet tend to repeat
+                                                                  </a>
+                                                                  <p class="item-quantity">
+                                                                      1 ×
+                                                                      <span class="price-amount">
+                                                                          <span class="price-currency">
+                                                                              £
+                                                                          </span>
+                                                                          70.00
+                                                                      </span>
+                                                                  </p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                              <div class="dropdown-divider"></div>
+                                          </ul>
+                                          <div class="row no-gutters subtotal">
+                                              <div class="col-12 total-price">
+                                                  <p>
+                                                      <span>Subtotal:</span>
+                                                      <span><span>£</span> 70.00</span>
+                                                  </p>
+                                              </div>
+                                              <div class="col-12 btns">
+                                                  <a class="btn btn-black" href="#">View cart</a>
+                                                  <a class="btn btn-pink" href="#">Checout</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav">
+                                      <li class="nav-item myActive">
+                                          <a class="nav-link" href="home.html">Home <span
+                                                  class="sr-only">(current)</span></a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="about.html">About Us</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="contact.html">Contact Us</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="blog.html">Blog</a>
+                                      </li>
+                                      <li class="nav-item dropdown dropdown-product">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                              role="button" data-toggle="dropdown" aria-haspopup="true"
+                                              aria-expanded="false">
+                                              Products
+                                              <i class="fas fa-angle-down"></i>
+                                          </a>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                              <ul class="category">
+                                                  <div class="row no-gutters">
+                                                      <div class="col-lg-4 col-md-4 col-6">
+                                                          <li class="category-item">
+                                                              <a class="category-title" href="#">furniture</a>
+                                                              <ul class="subcategory">
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">LivingRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">bedRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">Office</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Kitchen
+                                                                          & Dining</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Entry &
+                                                                          mudroom</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </div>
+
+                                                      <div class="col-lg-4 col-md-4 col-6">
+                                                          <li class="category-item">
+                                                              <a class="category-title" href="#">rug</a>
+                                                              <ul class="subcategory">
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">LivingRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">bedRoom</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </div>
+
+                                                      <div class="col-lg-4 col-md-4 col-6">
+                                                          <li class="category-item">
+                                                              <a class="category-title" href="#">furniture</a>
+                                                              <ul class="subcategory">
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">LivingRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">bedRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">Office</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Kitchen
+                                                                          & Dining</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </div>
+
+                                                      <div class="col-lg-4 col-md-4 col-6">
+                                                          <li class="category-item">
+                                                              <a class="category-title" href="#">furniture</a>
+                                                              <ul class="subcategory">
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">LivingRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">bedRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">Office</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </div>
+
+                                                      <div class="col-lg-4 col-md-4 col-6">
+                                                          <li class="category-item">
+                                                              <a class="category-title" href="#">furniture</a>
+                                                              <ul class="subcategory">
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">LivingRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">bedRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">Office</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Kitchen
+                                                                          & Dining</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Entry &
+                                                                          mudroom</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Entry &
+                                                                          mudroom</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Entry &
+                                                                          mudroom</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4 col-6">
+                                                          <li class="category-item">
+                                                              <a class="category-title" href="#">furniture</a>
+                                                              <ul class="subcategory">
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">LivingRoom</a></li>
+                                                                  <li class="subcategory-item"><a
+                                                                          href="#">bedRoom</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Kitchen
+                                                                          & Dining</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Entry &
+                                                                          mudroom</a></li>
+                                                                  <li class="subcategory-item"><a href="#">Entry &
+                                                                          mudroom</a></li>
+                                                              </ul>
+                                                          </li>
+                                                      </div>
+                                                  </div>
+                                              </ul>
+                                              <ul class="sale-banner">
+                                                  <li>
+                                                      <div class="single-banner">
+                                                          <div class="sale-img">
+                                                              <img src="img/menu_banner11.webp" alt="">
+                                                              <div class="sale-info">
+                                                                  <p>10%<span>off</span></p>
+                                                                  <p>New arrival</p>
+                                                                  <a href="#">Shop now</a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                                  <li>
+                                                      <div class="single-banner">
+                                                          <div class="sale-img">
+                                                              <img src="img/menu_banner22.webp" alt="">
+                                                              <div class="sale-info">
+                                                                  <p>10%<span>off</span></p>
+                                                                  <p>Livingroom</p>
+                                                                  <a href="#">Shop now</a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                                  <li>
+                                                      <div class="single-banner">
+                                                          <div class="sale-img">
+                                                              <img src="img/menu_banner33.webp" alt="">
+                                                              <div class="sale-info">
+                                                                  <p>20%<span>off</span></p>
+                                                                  <p>best seller</p>
+                                                                  <a href="#">Shop now</a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                      </li>
+                                      <li class="nav-item dropdown dropdown-account screen-md">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                              role="button" data-toggle="dropdown" aria-haspopup="true"
+                                              aria-expanded="false">
+                                              My Account
+                                              <i class="fas fa-angle-down"></i>
+                                          </a>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                              <ul>
+                                                  <li>
+                                                      <a href="myProfile.html">
+                                                          <span>My account</span>
+                                                      </a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">
+                                                          <span>My orders</span>
+                                                      </a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">
+                                                          <span>Recently viewed</span>
+                                                      </a>
+                                                  </li>
+                                                  <li>
+                                                      <a href="#">
+                                                          <span>help & contact</span>
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                      </li>
+                                      <li class="nav-item screen-md">
+                                          <a class="nav-link" href="#">
+                                              Wishlist
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+    <main>
+      <section id="intro">
+        <div class="intro">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="page-title">
+                  <h1>Blog</h1>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="breadcrumb-area">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="blog.html">blog</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><a href="#">posts</a></li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blogArea">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-9 col-11">
+                      <div class="mainBlog">
+                          <div class="card w-100">
+                              <div class="post-img">
+                                <a href="blogDetails.html">
+                                <img src="img/blog_img1-3.webp">
+                                </a>
+                              </div>
+                              <div class="card-body">
+                                  <h1> <a href="blogDetails.html">But I must explain to you how all this mistaken idea</a></h1>
+                                    <ul>
+                                        <li>
+                                            <span><i class="far fa-calendar"></i></span>
+                                            <span>April23, 2020</span> 
+                                        </li>
+                                        <li>
+                                            <span><i class="far fa-folder"></i></span>
+                                            <span>Standart</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="fas fa-tag"></i></span>
+                                            <span>Shop store, woocommerce</span>
+                                        </li>
+                                    </ul>
+                                  <hr>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                      Curabitur malesuada malesuada metus ut placerat. Cras a 
+                                      porttitor quam, eget ornare sapien. In sit amet vulputate 
+                                      metus. Nullam eget rutrum nisl. Sed tincidunt lorem sed
+                                       maximus interdum. Interdum et malesuada fames ac ante 
+                                       ipsum primis in faucibus. Aenean scelerisque efficitur 
+                                       mauris nec tincidunt. Ut cursus leo</p>
+                                  <a class="btn-pink" href="blogDetails.html">read more</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mainBlog">
+                        <div class="card w-100">
+                            <div class="post-img">
+                              <a href="blogDetails.html">
+                              <img src="img/blog_img1-3.webp">
+                              </a>
+                            </div>
+                            <div class="card-body">
+                                <h1> <a href="blogDetails.html">But I must explain to you how all this mistaken idea</a></h1>
+                                  <ul>
+                                      <li>
+                                          <span><i class="far fa-calendar"></i></span>
+                                          <span>April23, 2020</span> 
+                                      </li>
+                                      <li>
+                                          <span><i class="far fa-folder"></i></span>
+                                          <span>Standart</span>
+                                      </li>
+                                      <li>
+                                          <span><i class="fas fa-tag"></i></span>
+                                          <span>Shop store, woocommerce</span>
+                                      </li>
+                                  </ul>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Curabitur malesuada malesuada metus ut placerat. Cras a 
+                                    porttitor quam, eget ornare sapien. In sit amet vulputate 
+                                    metus. Nullam eget rutrum nisl. Sed tincidunt lorem sed
+                                     maximus interdum. Interdum et malesuada fames ac ante 
+                                     ipsum primis in faucibus. Aenean scelerisque efficitur 
+                                     mauris nec tincidunt. Ut cursus leo</p>
+                                <a class="btn-pink" href="blogDetails.html">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-11">
+                      <div class="sidebar">
+                        <div class="searchArea">
+                            <form>
+                              <input type="text" placeholder="search...">
+                              <a href="#"><i class="fas fa-search"></i></a>
+                            </form>
+                          </div>
+                          <div class="popularPosts">
+                              <div class="title">
+                                  <h5>popular Posts</h5>
+                              </div>
+                              <div class="single-post">
+                                  <div class="post-img">
+                                      <a href="blogDetails.html"><img src="img/blog_img1-3-80x80.webp"></a>
+                                  </div>
+                                  <div class="content">
+                                      <h6> <a href="blogDetails.html">But I must explain to you how all this mistaken idea</a></h6>
+                                      <p>April 23, 2020</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="categories">
+                            <div class="title">
+                                <h5>Categories</h5>
+                            </div>
+                              <ul>
+                                  <li><a href="#">Audio</a></li>
+                                  <li><a href="#">gallery</a></li>
+                                  <li><a href="#">image</a></li>
+                                  <li><a href="#">standart</a></li>
+                                  <li><a href="#">vimeo</a></li>
+                                  <li><a href="#">youtube</a></li>
+                              </ul>
+                          </div>
+                          <div class="bannerArea d-flex justify-content-center">
+                              <div class="single-banner">
+                                  <div class="banner-img"><img src="img/sidebar_banner_img1.webp"></div>
+                                  <div class="banner-info">
+                                      <h5>new collection</h5>
+                                      <h3>sale 30% off</h3>
+                                      <a class="btn-white" href="#">shop now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="tags">
+                            <div class="title">
+                                <h5>tags</h5>
+                            </div>
+                              <div class="allTags">
+                                  <a href="#">Audio</a>
+                                  <a href="#">ecommerce</a>
+                                  <a href="#">envato</a>
+                                  <a href="#">image</a>
+                                  <a href="#">online</a>     
+                                  <a href="#">ecommerce</a>
+                                  <a href="#">envato</a>
+                                  <a href="#">shop</a>
+                                  <a href="#">Audio</a>
+                                  <a href="#">video</a>
+                                  <a href="#">envato</a>
+                                  <a href="#">shop</a>
+                                  <a href="#">ecommerce</a>
+                                  <a href="#">online</a>
+                                  <a href="#">image</a>
+                                  <a href="#">video</a>                            
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id="subscribe">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="title">
+                <h3>Subscribe our newsletter</h3>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="subscribe-form">
+                <form>
+                  <input type="email" placeholder="your email address">
+                  <button type="submit">
+                    Sign up
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="popup-search">
+        <div class="search-wrapper">
+          <div class="search-form">
+            <input type="text">
+            <div class="search-icon">
+              <a href="#">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="close-icon">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="logo-area">
+                  <div class="logo">
+                    <a href="home.html"><img src="img/logo_light-3.webp"></a>
+                    <p>If you are going to use of Lorem Ipsum need to
+                      be sure there isn't hidden of text</p>
+                  </div>
+                  <div class="soc-nets">
+                    <ul>
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer-menu">
+                  <h5> Useful Links</h5>
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer-menu">
+                  <h5> Category</h5>
+                  <ul>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Living Room</a></li>
+                    <li><a href="#">kid's</a></li>
+                    <li><a href="#">chair</a></li>
+                    <li><a href="#">dining table</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-menu">
+                  <h5>my account</h5>
+                  <ul>
+                    <li><a href="#">my account</a></li>
+                    <li><a href="#">disaccount</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">orders history</a></li>
+                    <li><a href="#">orders tracking</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="contact-info">
+                  <h5>Contact info</h5>
+                  <ul>
+                    <li>
+                      <span><i class="fas fa-map-marker-alt"></i></span>
+                      <span>123 street,<span> Old Trafford,</span> <span>New South London,</span> UK</span>
+                    </li>
+                    <li>
+                      <span><i class="far fa-envelope"></i>
+                      </span><span>info@shopwise.com</span>
+                    </li>
+                    <li>
+                      <span><i class="fas fa-phone"></i></span>
+                      <span>+ 457 759 789 65</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="copyright">
+                  <p>Copyright 2020.KlbTheme . All rights reserved</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="pay-type">
+                  <ul>
+                    <li><img src="img/visa-3.webp"></li>
+                    <li><img src="img/paypal-3.webp"></li>
+                    <li><img src="img/discover-3.webp"></li>
+                    <li><img src="img/master_card-3.webp"></li>
+                    <li><img src="img/amarican_express-3.webp"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/25a8a55cf9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
